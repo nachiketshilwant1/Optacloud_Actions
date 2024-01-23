@@ -23,7 +23,6 @@ axios.get(url, {params: params})
       core.setFailed(`The temperature in ${city} is too high for deployment`);
       core.setOutput('status', 'failed');
     } else {
-      // Set the output variable
       core.setOutput('status', 'success');
     }
   })
