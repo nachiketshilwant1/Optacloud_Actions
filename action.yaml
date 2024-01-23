@@ -1,0 +1,17 @@
+name: 'Check Temperature'
+description: 'Check the temperature of a city and fail the deployment if it is greater than 30 °C'
+inputs:
+  city:
+    description: 'The city to check the temperature of'
+    required: true
+    default: 'Mumbai'
+  api_key:
+    description: 'The API key for openweathermap'
+    required: true
+outputs:
+  status:
+    description: 'The status of the deployment'
+runs:
+  using: 'node-latest'
+  main: 'index.js'
+
