@@ -1,5 +1,6 @@
 const core = require('@actions/core');
 const axios = require('axios');
+require('dotenv').config()
 
 // Get the input variables from the workflow file
 const api_key = core.getInput('api_key');
