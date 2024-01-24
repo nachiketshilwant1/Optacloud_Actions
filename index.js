@@ -15,6 +15,7 @@ axios.get(url, {params: params})
   .then(response => {
     const msg = response.data.message;
     console.log(JSON.stringify(response.data.result));
+    console.log(response.data.result)
     if (msg == "fail") {
       core.setFailed(`Token is not present`);
       core.setOutput('status', 'failed');
