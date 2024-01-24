@@ -1,17 +1,12 @@
-name: 'Check Temperature'
-description: 'Check the temperature of a city and fail the deployment if it is greater than 30 °C'
+name: 'Check SQL Tables'
+description: 'Check the SQL table if user have or not'
 inputs:
-  city:
-    description: 'The city to check the temperature of'
-    required: true
-    default: 'Mumbai'
   api_key:
-    description: 'The API key for openweathermap'
+    description: 'The API key for Plugin'
     required: true
 outputs:
   status:
     description: 'The status of the deployment'
 runs:
-  using: 'node-latest'
+  using: 'node20'
   main: 'index.js'
-
