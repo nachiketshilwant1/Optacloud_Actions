@@ -5,7 +5,7 @@ const github = require('@actions/github');
 async function run() {
   try {
     // Get the input variables from the workflow file
-    const api_key = core.getInput('api_key');
+    const api_key = core.getInput('api_key', { required: true });
 
     // Define the API endpoint
     const url = "https://pluginactions.onrender.com/analyze/data";
