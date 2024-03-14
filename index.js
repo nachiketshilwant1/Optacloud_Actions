@@ -24,9 +24,9 @@ async function run() {
         user: userName,
       },
     });
-
+  console.log(response.data);
     // Validate the response data
-    if (!response.data || !response.data.status) {
+    if (!response.data.status) {
       throw new Error(
         response.data.Message || "Failed to retrieve data from the API"
       );
