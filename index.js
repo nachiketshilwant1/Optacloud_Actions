@@ -28,7 +28,7 @@ async function run() {
     // Validate the response data
     if (!response.data.status) {
       throw new Error(
-        response.data.Message || "Failed to retrieve data from the API"
+        response.data.Message || "Failed but message not shown"
       );
     }
 
