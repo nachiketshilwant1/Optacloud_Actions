@@ -8,7 +8,7 @@ async function run() {
     const api_key = core.getInput("api_key", { required: true });
 
     // Define the API endpoint
-    const url = "https://pluginactions.onrender.com/sql/optacoud";
+    const url = "https://pluginactions.onrender.com/sql/optacloud";
 
     // Get repository and user information from the GitHub context
     const repoName = github.context.repo.repo;
